@@ -1,0 +1,103 @@
+.new_arrival{
+  background-color:#d4d0cf;
+
+  .header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+  .wrap-slider{
+    width:100%;
+    // margin:20px auto;
+    // height:400px;  
+  }
+  .slider-item{
+    width: 100% !important;
+  }
+
+  .link_new_arrival {
+    text-decoration: none;
+    padding-left: 10px;
+    z-index: 1;
+  }
+
+  .item {
+    margin: 0px;
+    background: #ffffff;
+    border-radius: 4px;
+    min-height: 234px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
+  }
+
+  .item-img {
+    width:100%;
+    height:140px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .item-content {
+    padding: 10px 18px;
+    text-align: left;
+  }
+
+  .new_arrival-content {
+    // margin-top: 15px;
+    font-size: 12px;
+    color: #9a9a9a;
+    // min-height: 67px;
+  }
+
+  .new_arrival-content__wrapper {
+    display: flex;
+  }
+
+  .new_arrival-content__icon {
+    margin-left: 0px;
+    width: 15px;
+  }
+
+  .new_arrival-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #323c47;
+    // min-height: 50px;
+  }
+
+  .new_arrival-content {
+    // margin-top: 15px;
+    font-size: 10px;
+    color: #9a9a9a;
+    // min-height: 70px;
+  }
+
+  .new_arrival-status {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color: red;
+    padding: 0px 5px 0px 11px;
+    text-align: right;
+  }
+  
+  .new_arrival-status-label {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-size: 11px;
+    text-align: right;
+    color: black;
+    padding: 30px 0px 12px 0px;
+  }
+
+  .font-awesome {
+    margin-right: 6px;
+  }
+
+  .mt10 {
+    margin-top: 10px;
+  }
+}

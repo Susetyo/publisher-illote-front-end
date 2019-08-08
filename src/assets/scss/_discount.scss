@@ -1,0 +1,21 @@
+.discount{
+  margin-top: 10px;
+  background-color: white;
+  .wrap-slider{
+    width:100%;
+    // margin:20px auto;
+    // height:400px;  
+  }
+  .slider-item{
+    width: 86% !important;
+  }
+  .contain-img{
+    padding: 17px;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+}
