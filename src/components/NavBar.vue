@@ -64,7 +64,7 @@ export default {
   methods:{
     updateScroll() {
       this.scrollPosition = window.scrollY;
-      this.theOpacity = window.scrollY == 0 ? 0 : window.scrollY / 1000;
+      this.theOpacity = window.scrollY == 0 ? 0 : window.scrollY / 100;
     },
   },
   mounted() {
