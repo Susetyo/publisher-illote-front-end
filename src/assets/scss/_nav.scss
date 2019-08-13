@@ -1,12 +1,25 @@
 .nav_cm{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background: transparent;
 
-  .search_cm{
-    display: inline-block;
-  }
+	.search_cm{
+		display: inline-block;
+	}
+
+	.search-background{
+		background-color: #696e72; 
+		width:100%;
+		position: fixed;
+		left:0;
+		top:0;
+		display: block;
+		height: 60px;
+		z-index: 0;
+	}
+
+
 }

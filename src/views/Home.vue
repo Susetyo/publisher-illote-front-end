@@ -38,7 +38,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.container-fluid{
-  background-color:#d4d0cf
-}
+.container-fluid{ background-color:#f0f0f0; }
 </style>

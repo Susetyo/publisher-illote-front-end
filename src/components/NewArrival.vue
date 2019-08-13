@@ -76,6 +76,41 @@
                   </div>
                 </div>
               </a>
+              <a class="link_new_arrival">
+                <div class="item">
+                  <div class="item-img">
+                    <img :src="banner.htmlSecond.url"/>
+                  </div>
+                  <div class="item-content">
+                    <div class="new_arrival-title">{{banner.htmlSecond.title}}</div>
+                    <div class="new_arrival-content">
+                      <div class="new_arrival-content__wrapper">
+                        <div class="new_arrival-content__icon">
+                          <font-awesome-icon
+                            icon="clock"
+                            class="font-awesome"
+                          />
+                        </div>
+                        <div class="new_arrival-content__data">{{banner.htmlSecond.desc}}</div>
+                      </div>
+                      <div class="new_arrival-content__wrapper">
+                        <div class="mt10 new_arrival-content__icon"> 
+                          <font-awesome-icon
+                            icon="map-marker-alt"
+                            class="font-awesome"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="new_arrival-status col align-self-end">
+                        {{banner.htmlSecond.price}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
           </slideritem>
           <div slot="loading">loading...</div>
       </slider>

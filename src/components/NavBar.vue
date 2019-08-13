@@ -6,40 +6,41 @@
     toggleable="lg" 
     type="light">
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
-      </b-navbar-nav>
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item-dropdown>
-          <template slot="button-content"><em>User</em></template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
-    
-    <b-nav-form>
-      <b-input-group>
-        <b-input-group-text slot="append" 
-        style="background-color: white;
-          border-left: 0px;
-          border-top-right-radius: 25px;
-          border-bottom-right-radius: 25px;">
-          <i class="fas fa-search"></i>
-        </b-input-group-text>
-        <b-form-input 
+    <div :style="{ 
+      paddingTop: '10px',
+      backgroundColor: 'transparent', 
+      width:'100%',
+      position: 'fixed',
+      left:0,
+      top:0,
+      display:'flex',
+      zIndex: 10
+    }">
+      
+      <button data-v-4295d220="" type="button" aria-label="Toggle navigation" aria-controls="nav-collapse" aria-expanded="false" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <b-nav-form>
+        <b-input-group>
+          <b-input-group-text slot="append" 
           style="background-color: white;
-          border-right: 0px;
-          border-top-left-radius: 25px;
-          border-bottom-left-radius: 25px;"></b-form-input>
-      </b-input-group>
-    </b-nav-form>
+            border-left: 0px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;">
+            <i class="fas fa-search"></i>
+          </b-input-group-text>
+          <b-form-input 
+            style="background-color: white;
+            border-right: 0px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;"></b-form-input>
+        </b-input-group>
+      </b-nav-form>
+    </div>  
+    <div class="search-background" :style="{ opacity:theOpacity }"></div>
+  </b-navbar>
     
-    </b-navbar>
 </div>
 </template>
 <style lang="scss" src="@/assets/scss/_nav.scss" scoped></style>
@@ -52,12 +53,13 @@ export default {
   data() {
     return {
       scrollPosition: null,
+      theOpacity: 0
     };
   },
   methods:{
     updateScroll() {
       this.scrollPosition = window.scrollY;
-      console.log(this.scrollPosition)
+      this.theOpacity = window.scrollY == 0 ? 0 : window.scrollY / 1000;
     },
   },
   mounted() {
@@ -68,7 +70,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar-light .navbar-toggler{
-  background-color: white;
+  border-color: transparent !important;
 }
 .scrolling{
   background-color: white;

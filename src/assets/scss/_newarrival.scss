@@ -1,5 +1,9 @@
+$galaxy-s9: 360px;
+$iphone-6-7-plus: 414px;
+$iphone-5: 320px;
+
 .new_arrival{
-  background-color:#d4d0cf;
+  background-color:#f0f0f0;
 
   .header{
     padding-top: 20px;
@@ -11,8 +15,23 @@
     // margin:20px auto;
     // height:400px;  
   }
-  .slider-item{
-    width: 100% !important;
+
+  @media screen and (min-width: $galaxy-s9) {
+    .slider-item{
+      width: 126% !important;
+    }
+  }
+
+  @media screen and (min-width: $iphone-6-7-plus) {
+    .slider-item{
+      width: 118% !important;
+    }
+  }
+
+  @media screen and (min-width: $iphone-5) and (max-width: $iphone-5) {
+    .slider-item{
+      width: 145% !important;
+    }
   }
 
   .link_new_arrival {
