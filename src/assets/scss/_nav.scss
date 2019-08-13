@@ -21,5 +21,57 @@
 		z-index: 0;
 	}
 
+	.header-search__logo{
+	    height: 16px;
+	    width: 71px;
+	    max-width: 180px;
+	    top: 0;
+	    left: 15px;
+	    z-index: 1;
+	    background: url(https://cdn.ilotte.me/static/mp/819/static-root/images/common/sp_logo_common.png) no-repeat;
+        background-size: auto;
+	    background-size: 250px 250px;
+	    position: absolute;
+	    z-index: 10;
+	    top:10px;
+	    left:13px;
+	}
+
+	.top-bar{
+		top: -17px;
+		left: 0;
+		width: calc(100% - 135px);
+		height: 35px;
+		background: url(https://cdn.ilotte.me/static/mp/819/static-root/images/common/bg-header-line.png) repeat-x;
+	    background-size: auto;
+		background-size: auto 100%;
+		position: absolute;
+	}
+
+	.right-bar{
+		top: -2px;
+		right: 0;
+		width: 150px;
+		height: 70px;
+		background: url(https://cdn.ilotte.me/static/mp/819/static-root/images/common/bg-header-white.png) no-repeat 15px 0;
+	    background-size: auto;
+		background-size: 100%;
+		position: absolute;
+		z-index: 11;
+
+		.icon-mallinmall{
+			position: absolute;
+			margin: auto;
+			top: -14px;
+			bottom: 0;
+			left: 78px;
+			background: url(https://cdn.ilotte.me/static/mp/819/static-root/images/common/sp_ico_common_lite.png) no-repeat -81px -37px;
+		    background-size: auto;
+			background-size: 200px 200px;
+			width: 37px;
+			height: 35px;
+		}
+	}
 
 }
+

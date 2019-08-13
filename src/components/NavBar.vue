@@ -5,9 +5,10 @@
     class="nav_cm" 
     toggleable="lg" 
     type="light">
-
+    <div class="top-bar"></div>
     <div :style="{ 
       paddingTop: '10px',
+      paddingLeft: '4px',
       backgroundColor: 'transparent', 
       width:'100%',
       position: 'fixed',
@@ -21,8 +22,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       
-      <b-nav-form>
+      <b-nav-form :style="{ width: '50%' }">
         <b-input-group>
+          <i class="header-search__logo"></i>
           <b-input-group-text slot="append" 
           style="background-color: white;
             border-left: 0px;
@@ -39,6 +41,9 @@
       </b-nav-form>
     </div>  
     <div class="search-background" :style="{ opacity:theOpacity }"></div>
+    <div class="right-bar">
+      <span class="icon-mallinmall"></span>
+    </div>
   </b-navbar>
     
 </div>
