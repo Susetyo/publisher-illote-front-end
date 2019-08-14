@@ -64,9 +64,11 @@ url: https://illote-fe.firebaseapp.com
 
 ## What is the factors for fast page load time?
   # answer : 
-    "1. HTTP request, every web have high request like image, style, or javascript. Reducing http your http request.
-    2. Minify your file, because if we request htpp more lager file more slow your request. With minify u can reduce number of file.
-    3. Asynchronus CSS or Javascript, because CSS or JavaScript file that is not asynchronous, it will stop loading until it has fully loaded that particular file. If that same file were asynchronous, the browser could continue loading other elements on the page at the same time."
+    " 1.  HTTP request, every web have high request like image, style, or javascript. Reducing http your http request.
+      2.  Minify your file, because if we request htpp more lager file more slow your request. With minify u can reduce number of file.
+      3.  Asynchronus CSS or Javascript, because CSS or JavaScript file that is not asynchronous, 
+        it will stop loading until it has fully loaded that particular file. 
+        If that same file were asynchronous, the browser could continue loading other elements on the page at the same time."
 
 ## How to reduce the size of downloadable html  page size by the browsers?
   # answer : 
@@ -74,16 +76,18 @@ url: https://illote-fe.firebaseapp.com
 
 ## When do DOMContentLoaded and Load events get fired ?
   # answer : 
-    "The DOMContentLoaded event is fired when the document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading. But the load event can be used to detect a fully-loaded page. So After All page fully loaded."
+    " The DOMContentLoaded event is fired when the document has been completely loaded and parsed, 
+      without waiting for stylesheets, images, and subframes to finish loading. 
+      But the load event can be used to detect a fully-loaded page. So After All page fully loaded."
 
-## Would you place an async script tag right before </body> ?
+## Would you place an async script tag right before body ?
   # answer : 
     "No, because make HTML DOM waiting until script done and make parser blocking. Because if your js have reference element first."
   
-## Is it generally a good idea to position CSS <link>s before <script> tags?
+## Is it generally a good idea to position CSS links before script tags?
   # answer:
-    "Yes, because CSS loaded first and make your website have nice view when rendering. If script first you will have blank page
-  and have a nice view until your script has been loaded."
+    "Yes, because CSS loaded first and make your website have nice view when rendering. 
+      If script first you will have blank page and have a nice view until your script has been loaded."
   
 ## What versioning control do you familiar to use? Git or SVN or not any
   # asnwer: 
