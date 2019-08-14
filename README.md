@@ -29,7 +29,7 @@ npm run lin
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-## THE WEBSITE(PLEASE OPEN ON YOUR PHONE ANDROID !!!)
+## THE WEBSITE(PLEASE OPEN ON YOUR ANDROID PHONE !!!)
 
 url: https://illote-fe.firebaseapp.com
 
